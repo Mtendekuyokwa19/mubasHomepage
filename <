@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+
+}
+
+:root {
+  --top-navbar: #37356b;
+  --top-navbar-font: white;
+  --top-socila-link: #efdaa0;
+  --font-white: white;
+  --mubas-hero-box: #0c85b7;
+  --mubas-hero-box-next: #eeda9f;
+}
+
+header {
+
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 150px;
+    color: var(--top-navbar-font);
+    background-color: var(--top-navbar);
+
+    img {
+      width: 60px;
+      height: 75px;
+      position: relative;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      ul {
+        display: flex;
+        padding: 6px;
+        justify-content: space-evenly;
+        flex-grow: 1;
+      }
+
+      ul:first-child {
+        padding: 2px 20px;
+      }
+
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* TODO: make icons for this */
+  .secondarynav {
+    display: flex;
+    justify-content: right;
+    background-color: var(--top-socila-link);
+    gap: 20px;
+    padding: 20px;
+
+  }
+}
+
+#publications {
+  margin-left: 90px;
+}
+
+.hero {
+  background-image: url("https://mubas.ac.mw/images/slider/slide1.jpg");
+  height: 500px;
+  display: flex;
+  color: var(--font-white);
+  justify-content: center;
+  align-items: center;
+
+  section {
+    section {
+      h2:first-child {
+        padding: 0px 0px 23px 0px;
+        border-bottom: 1px solid var(--font-white);
+
+      }
+
+      h2:last-child {
+        font-size: 40px;
+        color: var(--mubas-hero-box-next);
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      background-color: var(--mubas-hero-box);
+      height: 180px;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 60px;
+      border-radius: 13px 0px 0px 13px;
+    }
+
+  }
+
+}
+
+.mubas-box {
+  background-color: var(--mubas-hero-box-next);
+  width: 700px;
+  border-radius: 13px;
+
+  .mubas-box-info {
+    width: 650px;
+  }
+}
+
+.blogs {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+
+    img {
+      border: solid var(--mubas-hero-box);
+    }
+  }
+}
